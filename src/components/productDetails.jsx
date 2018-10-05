@@ -3,6 +3,8 @@ import React, { Component } from "react";
 class ProductDetails extends Component {
   handleSave = () => {
     // Navigate to /products
+    this.props.history.push("/products");
+    // this.props.history.replace("/products"); // it doesn't have back button. replace often used in login pages.
   };
 
   render() {
